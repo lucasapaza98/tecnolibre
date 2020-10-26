@@ -1,0 +1,159 @@
+body{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(8, 82, 82);
+}
+
+/*Boton menu*/
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+   display: none;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border-right: 1px solid rgb(158, 193, 240);
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+/*Menu de navegacion*/
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:768px){
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top:1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+}
+
+/*Pagina principal*/
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+    max-width: 1300px;
+}
+
+main article {
+	background: #fff;
+	margin: 20px 0;
+	padding: 20px;
+    height: 100%;}
+    
+    
+.servicios{
+    width: 50%;
+    margin: auto;
+    background: rgb(129, 128, 128);
+    margin-top: 20%;
+    padding: 20px;
+    
+}
+
+
+.servicios .redes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    
+    
+}
+.servicios .redes i{
+    font-size: 40px;
+    color:#fff;
+    
+   
+}
+
+.servicios .redes i:hover{
+   font-size: 42px;
+   transition: all ease 0.5s;
+}
+
+.servicios .redes  .wsp:hover{
+    color:green;
+   
+    
+}
+
+.servicios .redes  .fb:hover{
+    color:blue;
+   
+}
+
+.servicios .redes  .ig:hover{
+    color:violet;
+    
+    
+}
+.redes a{
+    color: black;
+}
+
+
+footer{
+  
+    text-align:center;
+    margin-top:90px;
+    font-size:18px;
+    color:#fff;
+    background-color: rgb(13, 153, 111);
+    width: 68em;
+    padding: 20px;
+
+  }

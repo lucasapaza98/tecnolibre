@@ -1,0 +1,218 @@
+
+body{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(8, 82, 82);
+}
+
+/*Boton menu*/
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+   display: none;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border-right: 1px solid rgb(158, 193, 240);
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+/*Menu de navegacion*/
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:768px){
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top:1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+}
+
+/*Pagina principal*/
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+    max-width: 1300px;
+}
+
+main article {
+	background: #fff;
+	margin: 20px 0;
+	padding: 20px;
+	height: 100%;
+}
+
+
+
+
+/*Formularios*/
+
+
+fieldset{
+    color:#fff;
+}
+
+.subprincipal {
+    margin: auto;
+    max-width: 800px;
+    width: 30%;
+    background:#6098b9;
+    padding:10px 3px;
+    }
+     
+    .principal {
+    padding: 50px 0;
+    width: 100%;
+    height:auto;
+    margin-top: 80px;
+    }
+
+    .principal .formulario{
+        color: #212121;
+    }
+
+    .principal .formulario input[type=text] {
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 90%;
+        }
+
+        .principal .formulario input[type=number] {
+            
+            padding: 4px;
+            width: 10%;
+            display: block;
+            margin-top: 4px;
+            }
+
+            .principal .formulario input[type=color] {
+                margin-bottom: 20px;
+                padding: 5px;
+                width: 90%;
+                }
+
+                /*Se agrega en javascript*/
+                .principal .formulario input[type=text].error {
+                    border: 5px solid #D32F2F;
+                    color: red;
+                    }
+
+                    
+                     
+                    .principal .formulario .boton {
+                        background: none;
+                        border: 1px solid #3650e2;
+                       
+                        display: inline-block;
+                        font-size: 16px;
+                        padding: 15px;
+                        }
+
+                        .principal .formulario .boton1 {
+                            background: none;
+                            border: 1px solid #3650e2;
+                            display: inline-block;
+                            font-size: 16px;
+                            padding: 15px;
+                            }
+
+                            .principal .formulario .boton:hover{
+                                color:#fff;
+                                background: rgb(31, 59, 87);
+                                transform: rotate(90%);
+                                translate: 50px;
+                                transition: all ease 0.5s;
+
+                            }
+
+                            .principal .formulario .boton1:hover{
+                                color:#fff;
+                                background: rgb(31, 59, 87);
+                                transform: rotate(90%);
+                                translate: 50px;
+                                transition: all ease 0.5s;
+
+                            }
+
+                            
+                            .principal .formulario .boton:active{
+                                color:#fff;
+                                background: rgb(17, 29, 41);
+                                transition: all ease 0.5s;
+                              
+                            }
+
+                            .principal .formulario .boton1:active{
+                                color:#fff;
+                                background: rgb(17, 29, 41);
+                                transition: all ease 0.5s;
+                               
+
+                            }
+
+
+footer{
+  
+    text-align:center;
+    margin-top:90px;
+    font-size:18px;
+    color:#fff;
+    background-color: rgb(13, 153, 111);
+    width: 68em;
+    padding: 20px;
+
+  }

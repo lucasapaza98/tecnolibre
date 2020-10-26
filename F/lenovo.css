@@ -1,0 +1,313 @@
+
+
+
+body{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    background: rgb(221, 216, 216);
+}
+
+/*Boton menu*/
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+   display: none;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border-right: 1px solid rgb(158, 193, 240);
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+/*Menu de navegacion*/
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:768px){
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top:1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+}
+
+/*Pagina principal*/
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+    max-width: 1300px;
+}
+
+main article {
+	background: #fff;
+	margin: 20px 0;
+	padding: 20px;
+	height: 100%;
+}
+
+/*Tablas*/
+
+.caracteristicas{
+    position: relative;
+    bottom:90px;
+    width: 667px;
+    height: 1206px;
+    left: 0;
+    
+}
+  
+  
+table, td, th {
+    
+    margin: 100px auto;
+    margin-top:90px;
+  }
+  table {
+    border-collapse:collapse;
+    width:55%;
+    
+  }
+  table caption{
+      font-size: 20px;
+      margin-top:2em;
+      margin-bottom:1em;
+      font-weight:600;
+
+  }
+
+td, th {
+	
+ padding:17px;
+ padding-left:4px;
+}
+
+td, tr{
+ padding-left:3px;
+ line-height:24px;
+}
+
+
+.servicios{
+    width: 50%;
+    margin: auto;
+    background-color: #DBDBDB;
+    position: relative;
+    bottom:30em;
+    
+
+}
+
+
+.servicios .redes{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    
+    
+}
+.servicios .redes i{
+    font-size: 40px;
+}
+
+.servicios .redes i:hover{
+   font-size: 42px;
+   transition: all ease 0.5s;
+}
+
+.servicios .redes  .wsp:hover{
+    color:green;
+    
+}
+
+.servicios .redes  .fb:hover{
+    color:blue;
+    
+}
+
+.servicios .redes  .ig:hover{
+    color:violet;
+    
+}
+.redes a{
+    color: black;
+}
+     
+footer{
+    text-align:center;
+    margin-top:90px;
+    font-size:small;
+    position: relative;
+    bottom:30em;
+  }
+.descripcion{
+    margin:60px;
+    position: relative;
+    top:-10em;
+
+    font-size: 20px;
+}
+
+.descripcion p{
+    font-style: oblique;
+
+    font-weight: lighter;
+    color: #6A6A6A;
+}
+.lenovo2{
+    background: rgb(231, 229, 229);
+    float: right;
+    position: relative;
+    width: 48%;
+    border-left: 1px solid rgba(214, 214, 214, 0.952);
+    border-top: 1px solid rgba(214, 214, 214, 0.952);
+    border-bottom: 1px solid rgba(214, 214, 214, 0.952);
+    border-right: 1px solid rgba(214, 214, 214, 0.952);
+    height: 60%;
+    
+
+    
+}
+
+.botonesimagen{
+  background: transparent;
+  margin-right: 50px;
+  margin-top:30px;
+  display: flex;
+ 
+  width: 100px;
+  height: auto;
+  
+
+}
+
+button{
+padding: 10px;
+margin-left: 20px;
+font-size: 12px;
+margin-bottom: 20px;
+cursor:pointer;
+}
+.com{
+  background: #fff;
+}
+
+.deb{
+background: #fff;
+
+}
+
+.cre{
+background: #fff;
+}
+
+.com:hover{
+color:#fff;
+transition: all ease 0.5s;
+background:green;  
+font-size:15px;
+   
+}
+
+.deb:hover{
+color:#fff;
+background: orange;  
+transition: all ease 0.5s;
+font-size:15px;
+}
+
+.cre:hover{
+  background: orange; 
+  transition: all ease 0.5s;
+  color:#fff;
+  font-size:15px;
+
+}
+.com::before{
+  content:"com";
+
+  
+  }
+.deb::before{
+content:"déb";
+
+}
+  
+.cre::before{
+content:"créd";
+}
+
+.com::after{
+  content:"prar";
+
+  }
+.deb::after{
+content:"ito";
+}
+  
+.cre::after{
+content:"ito";
+}
+
+.com:active{
+  background: rgb(21, 66, 23);
+}
+.deb:active{
+  background: rgba(158, 110, 19, 0.822);
+}
+  
+.cre:active{
+  background: rgba(158, 110, 19, 0.822);
+}
+
