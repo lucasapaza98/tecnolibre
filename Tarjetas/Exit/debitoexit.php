@@ -64,7 +64,6 @@
                 <li><a href="../../laptops.php">Laptops</a></li>   
                 <li><a href="../../historia.php">Historias</a></li>
                 <li><a href="../../descarga.php">Descargas</a></li>  
-                <li><a href="../../Admin/tcpdf/index.php">Administrador</a></li>    
                 <li style="position: relative; left: 65%;"><a href="../../ayuda.php" title="Ayuda"><i style="font-size:25px;" class="fas fa-question-circle"></i></a></li>
                 <li style="position: relative; left: 65%;"><a href="../../login.php" title="Ingresar"><i style="font-size:25px;" class="fas fa-sign-out-alt"></i></a></li>
             </ul>
