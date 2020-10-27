@@ -21,7 +21,6 @@
                 <li><a href="laptops.php">Laptops</a></li>
                 <li><a href="historia.php">Historias</a></li>
                 <li><a href="descarga.php">Descargas</a></li>
-                <li><a href="Admin/tcpdf/index.php">Administrador</a></li>
                 
                 
                 
