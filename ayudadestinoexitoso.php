@@ -33,11 +33,11 @@
     <article>
 
 
-    <section class="mensaje">
+        <section class="mensaje" style=" background:#597388; height:500px;">
            
-           <section class="mensaje-exito">
-               <h1>SU MENSAJE SE ENVIO EXITOSAMENTE</h1>
-               <a href="ayuda.php">Enviar nuevo mensaje</a>
+           <section class="mensaje-exito" style="margin-top:15%; padding:50px;">
+             <center> <h1><font size="6"color="#fff">SU MENSAJE SE ENVIO EXITOSAMENTE</font></h1></center> 
+           <center> <button style="padding:15px; margin-top:15em; cursor:pointer;">  <a href="ayuda.php" style="text-decoration:none; color:#000; font-size:16px;">Enviar Mensaje</a></button></center>
               
            </section>
 
